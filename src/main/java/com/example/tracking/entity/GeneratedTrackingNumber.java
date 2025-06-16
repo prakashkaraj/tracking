@@ -1,4 +1,4 @@
-package com.example.tracking;
+package com.example.tracking.entity;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
@@ -17,7 +17,6 @@ public class GeneratedTrackingNumber {
     @Column(name = "created_at", nullable = false)
     private OffsetDateTime createdAt;
 
-    // JPA requires a no-arg constructor
     public GeneratedTrackingNumber() {
     }
 
