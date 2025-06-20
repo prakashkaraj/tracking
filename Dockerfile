@@ -11,4 +11,4 @@ FROM openjdk:8-jre-slim
 WORKDIR /app
 COPY --from=build /app/target/tracking-0.0.1-SNAPSHOT.jar .
 EXPOSE 10000
-CMD ["java", "-jar", "tracking-0.0.1-SNAPSHOT.jar"]
+CMD ["java", "-Xms256m", "-Xmx400m", "-jar", "tracking-0.0.1-SNAPSHOT.jar"]
